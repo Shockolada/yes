@@ -87,6 +87,7 @@
   }
 
   @media (min-resolution: 1.5dppx) {
+
     .features__wrapper::before {
       background-image: url("../img/features-bg-tablet@2x.png");
     }
@@ -101,7 +102,7 @@
 
 
   .features h2 {
-    width: 332px;
+    width: 335px;
     margin-bottom: 88px;
   }
 
