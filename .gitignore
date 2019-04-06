@@ -6,6 +6,7 @@
 *.sublime*
 node_modules/
 npm-debug.*
+package-lock.json
 Thumbs.db
-Layout/
+Template/
 build/
