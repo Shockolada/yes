@@ -11,10 +11,10 @@ $(window).on('scroll', function () {
 // Button to scroll top
 var buttonTop = $('.scroll-button')
 $(window).on('scroll', function () {
-  if ($(window).scrollTop() >= 50) {
-    buttonTop.fadeIn();
+  if ($(window).scrollTop() >= 150) {
+    buttonTop.fadeIn(350);
   } else {
-    buttonTop.fadeOut();
+    buttonTop.fadeOut(350);
   }
 });
 
