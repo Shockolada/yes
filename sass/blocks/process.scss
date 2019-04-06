@@ -34,10 +34,6 @@
 }
 
 .process__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 36px;
   padding-bottom: 196px;
   background-position: center bottom;
@@ -95,6 +91,8 @@
 
 .process__item-title {
   position: relative;
+
+  display: inline-block;
   margin: 0;
   margin-bottom: 10px;
   padding: 0 40px;
@@ -152,12 +150,13 @@
   }
 
   .process__item {
-    align-items: flex-start;
     min-height: 210px;
     margin-bottom: 75px;
     padding: 0;
+    padding-top: 40px;
     padding-right: 375px;
-    width: 345px;
+    box-sizing: border-box;
+
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 345px auto;
@@ -348,8 +347,8 @@
   .process__item {
     min-height: 334px;
     margin-bottom: 70px;
+    padding-top: 100px;
     padding-right: 585px;
-    width: 555px;
     background-size: 555px auto;
   }
 
