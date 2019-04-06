@@ -1,0 +1,18 @@
+.decor-circle {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 9px solid $blue-color;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .decor-circle {
+    width: 55px;
+    height: 55px;
+    border: 15px solid $blue-color;
+  }
+}

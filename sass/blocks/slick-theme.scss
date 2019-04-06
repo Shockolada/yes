@@ -1,0 +1,150 @@
+/* Slider theme */
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 14px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  display: block;
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  font-size: 0;
+  line-height: 0;
+
+  background: #e9e9e9;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  background: $hover-accent-color;
+  box-shadow: 0 4px 10px 0 rgba($color: $shadow-color, $alpha: 0.55);
+}
+
+.slick-dots li.slick-active button {
+  background: $hover-accent-color;
+  box-shadow: 0 4px 10px 0 rgba($color: $shadow-color, $alpha: 0.55);
+}
+
+
+@media(min-width: $tablet-width) {
+
+  /* Dots */
+  .slick-dots {
+    height: 7px;
+    border-radius: 6px;
+
+    background-color: #e9e9e9;
+  }
+
+  .slick-dots li {
+    width: calc(100% / 3);
+    height: 7px;
+    margin: 0;
+  }
+
+  .slick-dots li button {
+    width: 100%;
+    height: 7px;
+    border-radius: 6px;
+  }
+
+
+  /* Arrows */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    font-size: 0;
+    line-height: 0;
+
+    color: transparent;
+    border: none;
+    background: transparent;
+
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/svg/slider-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    opacity: 0.25;
+    cursor: default;
+  }
+
+
+  .slick-prev {
+    left: -80px;
+
+    transform: translate(0, -50%) rotate(180deg);
+  }
+
+
+  .slick-next {
+    right: -80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

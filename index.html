@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yes. Пример верстки шаблона сайта для курсов по изучению английского языка</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+  <link rel="shortcut icon" href="yes-favicon.ico" type="image/x-icon">
+
+
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="js/libs/picturefill.min.js" async></script>
+
+  <script src="js/libs/svgxuse.min.js" defer></script>
+
+</head>
+
+
+<body>
+
+  <header class="page-header">
+    <div class="container page-header__wrapper">
+      <div class="logo page-header__logo">
+        <img class="logo-image" src="img/svg/logo.svg" width="100" alt="Логотип курсов">
+      </div>
+      <div class="page-header__contacts">
+        <span class="page-header__adress">г. Москва ул. Северная, 35</span>
+        <a class="tel page-header__tel" href="tel:+7987556677">+7 (987) 55-66-77</a>
+        <button class="link modal-open" type="button">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="courses__wrapper">
+    <section class="courses container">
+      <h2 class="visually-hidden">О курсах</h2>
+
+      <div class="courses__image-wrapper">
+        <picture>
+          <source media="(min-width: 1170px)"
+            srcset="img/courses-image-desktop@1x.png 1x, img/courses-image-desktop@2x.png 2x">
+          <source media="(min-width: 750px)"
+            srcset="img/courses-image-tablet@1x.png 1x, img/courses-image-tablet@2x.png 2x">
+          <img src="img/courses-image-mobile@1x.png" srcset="img/courses-image-mobile@2x.png 2x"
+            alt="Фотография английского двухэтажного автобуса на фоне Биг Бена">
+        </picture>
+      </div>
+
+      <div class="courses__content-wrapper">
+        <h1 class="headline headline--subline"><span class="headline__small">Ускоренный </span><br>2-месячный курс
+          английского языка</h1>
+        <p class="courses__info">Освойте английский для путешествий и научитесь объясняться в любой ситуации</p>
+        <a class="btn modal-open" href="#">Записаться на пробное занятие</a>
+      </div>
+
+
+      <span class="decor-dot courses__decor-dot"></span>
+      <span class="decor-circle courses__decor-circle"></span>
+      <span class="decor-vawe courses__decor-vawe"></span>
+
+    </section>
+  </div>
+
+  <div class="reasons__wrapper">
+    <section class="container reasons">
+
+      <h2 class="headline">Бывали ли вы в подобных ситуациях</h2>
+      <ol class="reasons__list">
+        <li class="reasons__item reasons__item-1">
+          <span class="reasons__number">01<span class="reasons__dot">.</span></span>
+          <p class="reasons__info reasons__info--shrink">Вы думали, что знаете английский, но в гостинице с трудом
+            выговариваете, какой
+            номер вам нужен</p>
+          <div class="reasons__image-wrapper">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/reasons-img-1-desktop@1x.jpg 1x, img/reasons-img-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/reasons-img-1-tablet@1x.jpg 1x, img/reasons-img-1-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/reasons-img-1-mobile@1x.jpg"
+                srcset="img/reasons-img-1-mobile@2x.jpg 2x" alt="Фотография из путешествий">
+            </picture>
+          </div>
+        </li>
+        <li class="reasons__item reasons__item-2">
+          <span class="reasons__number">02<span class="reasons__dot">.</span></span>
+          <p class="reasons__info">Вы смогли спросить, до какой станции метро нужно дойти, но не поняли, куда
+            вас отправили</p>
+          <div class="reasons__image-wrapper">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/reasons-img-2-desktop@1x.jpg 1x, img/reasons-img-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/reasons-img-2-tablet@1x.jpg 1x, img/reasons-img-2-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/reasons-img-2-mobile@1x.jpg"
+                srcset="img/reasons-img-2-mobile@2x.jpg 2x" alt="Фотография из путешествий">
+            </picture>
+          </div>
+        </li>
+        <li class="reasons__item reasons__item-3">
+          <span class="reasons__number">03<span class="reasons__dot">.</span></span>
+          <p class="reasons__info">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть
+            как-то говоряшего по-русски</p>
+          <div class="reasons__image-wrapper">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/reasons-img-3-desktop@1x.jpg 1x, img/reasons-img-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/reasons-img-3-tablet@1x.jpg 1x, img/reasons-img-3-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/reasons-img-3-mobile@1x.jpg"
+                srcset="img/reasons-img-3-mobile@2x.jpg 2x" alt="Фотография из путешествий">
+            </picture>
+          </div>
+        </li>
+        <li class="reasons__item reasons__item-4">
+          <span class="reasons__number">В итоге... </span>
+          <p class="reasons__info">Все это портит впечатление от отдыха и отбивает желание посещать новые
+            страны</p>
+          <div class="reasons__image-wrapper">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/reasons-img-4-desktop@1x.jpg 1x, img/reasons-img-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/reasons-img-4-tablet@1x.jpg 1x, img/reasons-img-4-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/reasons-img-4-mobile@1x.jpg"
+                srcset="img/reasons-img-4-mobile@2x.jpg 2x" alt="Фотография из путешествий">
+            </picture>
+          </div>
+        </li>
+      </ol>
+      <span class="decor-dot reasons__decor-dot"></span>
+      <span class="decor-vawe reasons__decor-vawe"></span>
+
+    </section>
+  </div>
+
+
+  <section class="features container">
+    <h2 class="headline headline--subline">Мы предусмотрели эти ситуации</h2>
+
+    <ul class="features__list">
+      <li class="features__item">
+        <h3 class="features__item-title">Значение</h3>
+        <p class="features__info features__info--1">Разбираем те ситуации, с которыми сталкивается путешественник</p>
+      </li>
+      <li class="features__item">
+        <h3 class="features__item-title">Понимание</h3>
+        <p class="features__info features__info--2">Учим объясняться самим и понимать, что говорят другие</p>
+      </li>
+      <li class="features__item">
+        <h3 class="features__item-title">Практика</h3>
+        <p class="features__info features__info--3">Проводим диалоги с преподавателями и носителями языка</p>
+      </li>
+    </ul>
+
+    <span class="decor-vawe features__decor-vawe"></span>
+  </section>
+
+
+  <section class="teachers container">
+    <h2 class="headline">Кто ведет курс</h2>
+
+    <ul class="teachers__list">
+      <li class="teacher__item">
+        <div class="teacher__image-wrapper">
+          <picture>
+            <source media="(min-width: 1170px)"
+              srcset="img/teachers-photo-1-desktop@1x.jpg 1x, img/teachers-photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 750px)"
+              srcset="img/teachers-photo-1-tablet@1x.jpg 1x, img/teachers-photo-1-tablet@2x.jpg 2x">
+            <img class="teacher__image" src="img/teachers-photo-1-mobile@1x.jpg"
+              srcset="img/teachers-photo-1-mobile@2x.jpg 2x" alt="Фоновая картинка курсов английского языка">
+          </picture>
+        </div>
+        <h3 class="teacher__item-title">Алла Ристовская</h3>
+        <p class="teacher__info">Занимается преподаванием английского языка с 2007 года. За 7 лет практики Алла
+          занималась более чем с 80 студентами.<br>
+          Очень любит путешествовать: неоднократно бывала зарубежом,
+          проходила
+          практику в США (Нью-Йорк) и Великобритании (Лондон).</p>
+      </li>
+      <li class="teacher__item">
+        <div class="teacher__image-wrapper">
+          <picture>
+            <source media="(min-width: 1170px)"
+              srcset="img/teachers-photo-2-desktop@1x.jpg 1x, img/teachers-photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 750px)"
+              srcset="img/teachers-photo-2-tablet@1x.jpg 1x, img/teachers-photo-2-tablet@2x.jpg 2x">
+            <img class="teacher__image" src="img/teachers-photo-2-mobile@1x.jpg"
+              srcset="img/teachers-photo-2-mobile@2x.jpg 2x" alt="Фоновая картинка курсов английского языка">
+          </picture>
+        </div>
+        <h3 class="teacher__item-title">Анастасия Левчук</h3>
+        <p class="teacher__info">Закончила Алтайскую Государственную педагогическую Академию по специальности "теория
+          и
+          методика преподавания иностранных языков и культур".<br>
+          Также имеется дополнительная квалификация
+          "переводчик в сфере профессиональной коммуникации".</p>
+      </li>
+      <li class="teacher__item">
+        <div class="teacher__image-wrapper">
+          <picture>
+            <source media="(min-width: 1170px)"
+              srcset="img/teachers-photo-3-desktop@1x.jpg 1x, img/teachers-photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 750px)"
+              srcset="img/teachers-photo-3-tablet@1x.jpg 1x, img/teachers-photo-3-tablet@2x.jpg 2x">
+            <img class="teacher__image" src="img/teachers-photo-3-mobile@1x.jpg"
+              srcset="img/teachers-photo-3-mobile@2x.jpg 2x" alt="Фоновая картинка курсов английского языка">
+          </picture>
+        </div>
+        <h3 class="teacher__item-title">Евгений Пак</h3>
+        <p class="teacher__info">Сетифицированный специалист (диплом ОмГПУ, TTC в Кембридже, TESOL в Лондоне). Имеет
+          богатый опыт работы на английском языке: от обучения в языковых школах до выполнения функции переводчика на
+          различных конференциях.<br>
+          Более года Евгений жил в г. Сиэтл (США).</p>
+      </li>
+    </ul>
+
+
+    <span class="decor-vawes teachers__decor-vawes"></span>
+    <span class="decor-dot teachers__decor-dot"></span>
+  </section>
+
+
+  <div class="program__wrapper">
+    <section class="program container">
+
+      <h2 class="headline headline--subline">Что входит в стоимость</h2>
+      <span class="program__price">21 000 рублей</span>
+      <p class="program__description">Вы пройдете 2-месячную программу по 2 занятия в неделю, в конце каждой из которых
+        сможете
+        самостоятельно построить диалог</p>
+
+      <ul class="program__list">
+        <li class="program__item">
+          <h3 class="program__title">1 неделя - аэропорт</h3>
+          <p class="program__info">Вылет-прилет, регистрация, специальный и пограничный, потеря багажа, задержка рейса
+          </p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">2 неделя - дорога, трансфер</h3>
+          <p class="program__info">Поиск транспорта, пункты назначения, общение с водителем (уточнения, просьбы,
+            остановки)</p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">3 неделя - гостиница, ночлег</h3>
+          <p class="program__info">Поиск ночлега, бронирование, уточнение условий проживания, решение проблем с
+            персоналом</p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">4 неделя - культурный отдых</h3>
+          <p class="program__info">Покупка билетов, туров, уточнение обстоятельств, потеря напарника, сопровождающего
+          </p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">5 неделя - местность, поиск</h3>
+          <p class="program__info">Выяснение дороги, направления, местонахождения (собственного и необходимых мест)</p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">6 неделя - магазины</h3>
+          <p class="program__info">Выбор, общение с продавцами, выяснение цены, торг, покупка, возврат, случаи
+            мошеничества</p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">7 неделя - общение с местными</h3>
+          <p class="program__info">Непринужденные беседы, вопросы, просьбы о помощи, совместный обед,
+            времяпрепровождения</p>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title">8 неделя - неожиданные ситуации</h3>
+          <p class="program__info">Разбор непредвиденных случаев (потеря документов, обращение в полицию, скорую)</p>
+        </li>
+      </ul>
+
+      <span class="decor-circle program__decor-circle"></span>
+      <span class="decor-vawe program__decor-vawe"></span>
+    </section>
+  </div>
+
+
+  <div class="process__wrapper">
+    <section class="process container">
+      <h2 class="headline headline--subline">Как все будет проходить</h2>
+
+      <ul class="process__list">
+        <li class="process__item process__item--bg-1">
+          <h3 class="process__item-title">Простое запоминание</h3>
+          <p class="process__item-info">Слова запоминаются в результате упрощенных техник и применения в спонтанных
+            ситуациях, а не посредством зубрежки</p>
+        </li>
+        <li class="process__item process__item--bg-2">
+          <h3 class="process__item-title">Импровизация и диалоги</h3>
+          <p class="process__item-info">Форма импровизации позволяет подготовиться к ситуации, когда шаблонные ответы
+            будут неприменимы</p>
+        </li>
+        <li class="process__item process__item--bg-3">
+          <h3 class="process__item-title">Говорим и слушаем</h3>
+          <p class="process__item-info">Прослушивание себя и профессионалов позволит научиться воспринимать чужую речь
+            на слух</p>
+        </li>
+        <li class="process__item process__item--bg-4">
+          <h3 class="process__item-title">Повторение</h3>
+          <p class="process__item-info">Каждое следующее занятие включает в себя закрепление предыдущих тем и создает
+            базу для прохождения следующих</p>
+          <span class="decor-circle process__decor-circle"></span>
+        </li>
+      </ul>
+
+      <span class="decor-dot process__decor-dot"></span>
+      <span class="decor-vawes process__decor-vawes"></span>
+    </section>
+  </div>
+
+
+  <section class="review container">
+    <h2 class="headline headline--subline">Отзывы студентов</h2>
+
+    <!-- Slider -->
+    <ul class="review__list">
+      <li>
+        <div class="review__item">
+          <div class="review__author-photo">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/review-photo-desktop@1x.jpg 1x, img/review-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/review-photo-tablet@1x.jpg 1x, img/review-photo-tablet@2x.jpg 2x">
+              <img class="review__author-image" src="img/review-photo-mobile@1x.jpg"
+                srcset="img/review-photo-mobile@2x.jpg 2x" alt="Фотография автора отзыва">
+            </picture>
+          </div>
+          <blockquote>
+            <cite class="review__author">Александра Иванова</cite>
+            <p class="review__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания.
+              Нашу
+              группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики
+              общения.<br>Неделю
+              назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и
+              спокойно! Мы
+              ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве
+              переводчика.<br>Спасибо
+              вам,
+              это было очень полезно!</p>
+            <a class="review__author-link" href="https://vk.com/" target="_blank">Вконтакте</a>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="review__item">
+          <div class="review__author-photo">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/review-photo-desktop@1x.jpg 1x, img/review-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/review-photo-tablet@1x.jpg 1x, img/review-photo-tablet@2x.jpg 2x">
+              <img class="review__author-image" src="img/review-photo-mobile@1x.jpg"
+                srcset="img/review-photo-mobile@2x.jpg 2x" alt="Фотография автора отзыва">
+            </picture>
+          </div>
+          <blockquote>
+            <cite class="review__author">Александра Иванова</cite>
+            <p class="review__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания.
+              Нашу
+              группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики
+              общения.<br>Неделю
+              назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и
+              спокойно! Мы
+              ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве
+              переводчика.<br>Спасибо
+              вам,
+              это было очень полезно!</p>
+            <a class="review__author-link" href="https://vk.com/" target="_blank">Вконтакте</a>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="review__item">
+          <div class="review__author-photo">
+            <picture>
+              <source media="(min-width: 1170px)"
+                srcset="img/review-photo-desktop@1x.jpg 1x, img/review-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 750px)"
+                srcset="img/review-photo-tablet@1x.jpg 1x, img/review-photo-tablet@2x.jpg 2x">
+              <img class="review__author-image" src="img/review-photo-mobile@1x.jpg"
+                srcset="img/review-photo-mobile@2x.jpg 2x" alt="Фотография автора отзыва">
+            </picture>
+          </div>
+          <blockquote>
+            <cite class="review__author">Александра Иванова</cite>
+            <p class="review__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания.
+              Нашу
+              группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики
+              общения.<br>Неделю
+              назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и
+              спокойно! Мы
+              ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве
+              переводчика.<br>Спасибо
+              вам,
+              это было очень полезно!</p>
+            <a class="review__author-link" href="https://vk.com/" target="_blank">Вконтакте</a>
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+
+    <span class="decor-dot review__decor-dot"></span>
+    <span class="decor-vawes review__decor-vawes"></span>
+  </section>
+
+
+  <div class="trial__wrapper">
+    <section class="trial container">
+      <h2 class="headline headline--subline">Бесплатное<br>пробное занятие</h2>
+      <p class="trial__info">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
+      <a class="btn trial__btn modal-open" href="#">Записаться на пробное занятие</a>
+
+      <span class="decor-vawe trial__decor-vawe--top"></span>
+      <span class="decor-vawe trial__decor-vawe--bottom"></span>
+      <span class="decor-dot trial__decor-dot--top"></span>
+      <span class="decor-dot trial__decor-dot--bottom"></span>
+      <span class="decor-dot--small trial__decor-dot--top-small"></span>
+      <span class="decor-dot--small trial__decor-dot--bottom-small"></span>
+    </section>
+  </div>
+
+
+  <footer class="page-footer">
+    <div class="container page-footer__wrapper">
+
+      <div class="page-footer__wrapper-left">
+        <div class="page-footer__school">
+          <div class="logo page-footer__logo">
+            <img class="logo__image" src="img/svg/logo.svg" width="100" alt="Логотип курсов">
+          </div>
+          <span class="page-footer__school-name">Школа Английского Языка</span>
+        </div>
+        <span class="page-footer__adress">г. Москва ул. Северная, 35</span>
+      </div>
+
+      <div class="page-footer__wrapper-right">
+        <div class="page-footer__order">
+          <a class="tel page-footer__tel" href="tel:+7987556677">+7 (987) 55-66-77</a>
+          <button class="link" type="button">Заказать звонок</button>
+        </div>
+
+        <ul class="social page-footer__social">
+          <li><a href="https://vk.com/" target="_blank" aria-label="Переход в социальную сеть Вконтакте">
+              <svg class="social__icon social__icon--vk" width="40" height="23" role="img">
+                <use xlink:href="img/svg/sprite-social-icons.svg#vk"></use>
+              </svg>
+            </a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" aria-label="Переход в социальную сеть Инстаграм">
+              <svg class="social__icon social__icon--insta" width="28" height="28" role="img">
+                <use xlink:href="img/svg/sprite-social-icons.svg#insta"></use>
+              </svg>
+            </a></li>
+          <li><a target="_blank" href="https://www.youtube.com/" aria-label="Переход на сайт Youtube">
+              <svg class="social__icon social__icon--youtube" width="27" height="33" role="img">
+                <use xlink:href="img/svg/sprite-social-icons.svg#youtube"></use>
+              </svg>
+            </a></li>
+          <li><a href="https://ok.ru/" target="_blank" aria-label="Переход в социальную сеть Одноклассники">
+              <svg class="social__icon social__icon--ok" width="19" height="33" role="img">
+                <use xlink:href="img/svg/sprite-social-icons.svg#ok"></use>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <div class="container">
+    <button class="scroll-button" type="button"><span class="visually-hidden">Вернуться на верх страницы</span></button>
+  </div>
+
+
+  <section class="modal modal__sign-up">
+
+    <form class="modal__entry-lesson" action="post">
+      <div class="modal__content-wrapper">
+        <h2 class="headline modal__headline">Пробное занятие</h2>
+        <p class="modal__info">Оставьте свой номер телефона, и наш оператор свяжется с вами для согласования даты
+          занятия</p>
+        <label class="visually-hidden" for="mobile">Введите номер телефона, чтобы записаться на пробное занятие</label>
+        <input class="modal__mobile" type="tel" id="mobile" name="client-mobile"
+          placeholder="+7 ( _ _ _ ) _ _ _ - _ _ _ _" required>
+        <button class="btn" type="submit">Записаться на пробное занятие</button>
+      </div>
+      <button class="modal__close" type="button"><span class="visually-hidden">Закрыть форму связи</span></button>
+    </form>
+
+  </section>
+
+  <div class="modal__overlay backdrop-opening"></div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/libs/jquery-3.3.1.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Slider -->
+  <script src="js/libs/slick.min.js"></script>
+  <!-- Initialize slider -->
+  <script>
+    $(document).ready(function () {
+      $('.review__list').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        mobileFirst: true,
+        arrows: false,
+        responsive: [{
+          breakpoint: 750,
+          settings: {
+            arrows: true
+          }
+        }]
+      });
+    });
+
+  </script>
+
+
+  <!-- Input JS -->
+  <script src="js/libs/jquery.maskedinput.min.js"></script>
+  <!-- Initialize Input -->
+  <script>
+    $(document).ready(function () {
+      $('#mobile').mask("+7 ( 9 9 9 ) 9 9 9 - 9 9 9 9");
+    });
+  </script>
+
+
+</body>
+
+</html>

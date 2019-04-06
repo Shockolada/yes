@@ -1,0 +1,60 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  margin: 0;
+  margin-right: -25px;
+  padding: 0;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.social li {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  height: 33px;
+  margin-right: 26px;
+}
+
+.social__icon {
+  fill: #000000;
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: $hover-accent-color;
+  }
+
+  &:active {
+    opacity: 1;
+    fill: $active-accent-color;
+  }
+}
+
+.social__icon--vk {
+  width: 40px;
+  height: 23px;
+}
+
+.social__icon--insta {
+  width: 28px;
+  height: 28px;
+}
+
+.social__icon--youtube {
+  width: 27px;
+  height: 33px;
+}
+
+.social__icon--ok {
+  width: 19px;
+  height: 33px;
+}
+

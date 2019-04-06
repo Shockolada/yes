@@ -1,0 +1,270 @@
+.program__wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 749px) {
+
+  .program__wrapper {
+    padding-top: 424px;
+    background-image: url("../img/big-ben-mobile-merged@1x.png");
+    background-repeat: no-repeat;
+    background-size: 288px auto;
+    background-position: 0 0;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+
+    .program__wrapper {
+      background-image: url("../img/big-ben-mobile-merged@2x.png");
+    }
+  }
+}
+
+.program h2 {
+  margin-bottom: 30px;
+}
+
+.program__price {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  color: $accent-color;
+}
+
+.program__description {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.program__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.program__item {
+  margin-bottom: 23px;
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font-bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__info {
+  margin: 0 auto;
+}
+
+.program__decor-circle {
+  display: none;
+}
+
+.program__decor-vawe {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .program__wrapper {
+    margin-bottom: 120px;
+    text-align: left;
+  }
+
+  .program {
+    position: relative;
+    width: 595px;
+    padding-left: 140px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 170px;
+      left: -420px;
+
+      width: 334px;
+      height: 334px;
+      border: 92px solid #f5f5f5;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: -35px;
+      left: -276px;
+
+      content: "";
+      width: 371px;
+      height: 881px;
+      background-image: url("../img/big-ben-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-size: 371px auto;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+
+    .program__wrapper::after {
+      background-image: url("../img/big-ben-tablet@2x.png");
+    }
+  }
+
+  .program h2 {
+    position: relative;
+    width: 435px;
+    margin-bottom: 50px;
+
+    &::before {
+      position: absolute;
+      right: -60px;
+      top: 0;
+      content: "?";
+      font-family: $font-bold;
+      font-size: 200px;
+      color: #f5f5f5;
+      z-index: -1;
+    }
+  }
+
+  .program__price {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .program__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 630px;
+  }
+
+  .program__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 282px;
+    margin-bottom: 25px;
+  }
+
+  .program__item:nth-child(4) {
+    padding-top: 24px;
+  }
+
+  .program__item:nth-child(7) {
+    padding-top: 24px;
+  }
+
+  .program__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__decor-vawe {
+    display: block;
+
+    top: 582px;
+    left: -40px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .program__wrapper {
+    margin-bottom: 90px;
+  }
+
+  .program {
+    width: 750px;
+    padding-left: 405px;
+
+    &::before {
+      top: 110px;
+      left: -280px;
+      width: 411px;
+      height: 411px;
+      border: 112px solid #f5f5f5;
+    }
+
+    &::after {
+      top: -125px;
+      left: -375px;
+      width: 731px;
+      height: 1078px;
+      background-image: url("../img/big-ben-desktop@1x.png");
+      background-size: 731px auto;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+
+    .program::after {
+      background-image: url("../img/big-ben-desktop@2x.png");
+    }
+  }
+
+  .program h2 {
+    width: 652px;
+    margin-bottom: 76px;
+
+    &::before {
+      right: -75px;
+      top: 15px;
+      font-size: 300px;
+    }
+  }
+
+  .program__price {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .program__description {
+    width: 650px;
+    margin-bottom: 32px;
+  }
+
+  .program__list {
+    height: 650px;
+  }
+
+  .program__item {
+    width: 360px;
+    margin-bottom: 28px;
+  }
+
+  .program__item:nth-child(4) {
+    padding-top: 0;
+  }
+
+  .program__item:nth-child(7) {
+    padding-top: 0;
+  }
+
+  .program__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .program__decor-vawe {
+    top: 610px;
+    left: 205px;
+  }
+
+  .program__decor-circle {
+    display: block;
+
+    left: -200px;
+    top: 115px;
+  }
+}

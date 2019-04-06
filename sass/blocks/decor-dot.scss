@@ -1,0 +1,22 @@
+.decor-dot {
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+
+  z-index: 5;
+
+  border-radius: 50%;
+  background-color: $blue-color;
+
+  &--small {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 5;
+
+    border-radius: 50%;
+    background-color: $blue-color;
+  }
+}

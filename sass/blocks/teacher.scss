@@ -1,0 +1,66 @@
+.teacher__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.teacher__image-wrapper {
+  width: 285px;
+  margin-bottom: 16px;
+}
+
+.teacher__item-title {
+  margin: 0 auto;
+  font-family: $font-bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 11px;
+}
+
+.teacher__info {
+  margin: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .teacher__item {
+    width: 345px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .teacher__image-wrapper {
+    width: 345px;
+    margin-bottom: 20px;
+  }
+
+  .teacher__item-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .teacher__info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .teacher__item {
+    width: 360px;
+  }
+
+  .teacher__image-wrapper {
+    width: 360px;
+    margin-bottom: 18px;
+  }
+}

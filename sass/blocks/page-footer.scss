@@ -1,0 +1,142 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-gray;
+  text-align: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 12px;
+}
+
+.page-footer__school {
+  margin-bottom: 3px;
+}
+
+.page-footer__adress {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.page-footer__wrapper-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-footer__order {
+  display: flex;
+  order: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 130px;
+}
+
+.page-footer__tel {
+  margin-bottom: 8px;
+}
+
+.page-footer__social {
+  margin-bottom: 25px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .page-footer {
+    padding-top: 42px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .page-footer__wrapper-left {
+    width: 235px;
+  }
+
+  .page-footer__school {
+    padding-top: 12px;
+    margin-bottom: 1px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 8px;
+  }
+
+  .page-footer__adress {
+    margin-bottom: 0;
+  }
+
+  .page-footer__wrapper-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 220px;
+  }
+
+  .page-footer__order {
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 145px;
+  }
+
+  .page-footer__tel {
+    margin-bottom: 5px;
+  }
+
+  .page-footer__social {
+    margin-bottom: 18px;
+
+    align-items: flex-end;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .page-footer {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .page-footer__wrapper-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-right: 35px;
+  }
+
+  .page-footer__school {
+    margin-bottom: 0;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 4px;
+  }
+
+  .page-footer__adress {
+    margin-bottom: 0;
+  }
+
+  .page-footer__wrapper-right {
+    width: 345px;
+  }
+
+  .page-footer__order {
+    width: 345px;
+  }
+
+  .page-footer__tel {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .page-footer__social {
+    margin-bottom: 25px;
+  }
+}

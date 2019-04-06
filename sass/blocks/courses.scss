@@ -1,0 +1,145 @@
+.courses__wrapper {
+  padding-top: 55px;
+  margin-bottom: 80px;
+}
+
+.courses {
+  position: relative;
+}
+
+.courses h1 {
+  margin-bottom: 32px;
+}
+
+.courses__image-wrapper {
+  position: relative;
+  z-index: -1;
+  width: 235px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.courses__content-wrapper {
+  margin-top: 36px;
+}
+
+.courses__info {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.courses__decor-dot {
+  top: 48px;
+  left: 265px;
+}
+
+.courses__decor-circle {
+  top: 227px;
+  left: 29px;
+}
+
+.courses__decor-vawe {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .courses__wrapper {
+    padding-top: 90px;
+    margin-bottom: 60px;
+    background-image: url("../img/svg/courses-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 1399px auto;
+    background-position: center 140px;
+  }
+
+  .courses {
+    display: flex;
+  }
+
+  .courses h1 {
+    margin-bottom: 42px;
+  }
+
+  .courses__image-wrapper {
+    margin-left: -71px;
+    margin-right: 34px;
+    width: 351px;
+  }
+
+  .courses__content-wrapper {
+    width: 375px;
+    margin-top: 76px;
+  }
+
+  .courses__info {
+    text-align: left;
+    margin-bottom: 70px;
+  }
+
+  .courses__decor-dot {
+    top: 25px;
+    left: 615px;
+  }
+
+  .courses__decor-circle {
+    top: 178px;
+    left: -190px;
+  }
+
+  .courses__decor-vawe {
+    display: block;
+    top: 300px;
+    left: 665px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .courses__wrapper {
+    margin-bottom: 118px;
+    padding-top: 110px;
+    background-size: 1890px auto;
+    background-position: center 130px;
+  }
+
+  .courses h1 {
+    margin-bottom: 48px;
+  }
+
+  .courses__image-wrapper {
+    width: 585px;
+    margin: 0;
+    margin-right: 45px;
+  }
+
+  .courses__content-wrapper {
+    width: 525px;
+    margin-top: 175px;
+    margin-bottom: 60px;
+  }
+
+  .courses__info {
+    width: 410px;
+    margin-bottom: 98px;
+    line-height: 24px;
+  }
+
+  .courses__decor-dot {
+    top: 85px;
+    left: 1070px;
+  }
+
+  .courses__decor-circle {
+    top: 250px;
+    left: -90px;
+  }
+
+  .courses__decor-vawe {
+    top: 475px;
+    left: 1010px;
+  }
+}

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "gilroylight";
+  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
+    url("../fonts/gilroy-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-light;
+
+  color: $text-color-main;
+  letter-spacing: 0.05em;
+
+  overflow-x: hidden;
+
+  // temporally
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 320px;
+    min-height: 9500px;
+    background-image: url("../Layout/Yes_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.5;
+  }
+  //
+}
+
+@media (min-width: $tablet-width) {
+
+  body {
+    font-size: 16px;
+    line-height: 24px;
+
+    // temporally
+    &::before {
+      top: 0;
+      width: 750px;
+      min-height: 8500px;
+      background-image: url("../Layout/Yes_tablet.jpg");
+    }
+    //
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  body {
+    font-size: 18px;
+    line-height: 28px;
+
+    // temporally
+    &::before {
+      width: 1170px;
+      min-height: 8000px;
+      background-image: url("../Layout/Yes_desktop.jpg");
+    }
+    //
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

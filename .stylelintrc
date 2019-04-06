@@ -1,0 +1,22 @@
+{
+    "rules": {
+        "indentation": 2,
+        "string-quotes": "double",
+        "no-duplicate-selectors": true,
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "selector-combinator-space-after": "always",
+        "selector-attribute-brackets-space-inside": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "always",
+        "number-leading-zero": "always",
+        "function-url-quotes": "always",
+        "at-rule-no-vendor-prefix": true,
+        "rule-empty-line-before": "always-multi-line",
+        "selector-pseudo-element-colon-notation": "double",
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-colon-space-before": "never",
+        "media-feature-colon-space-after": "always"
+    }
+}

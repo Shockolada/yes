@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 40.91">
+  <defs>
+    <style>
+      .a {
+        fill: #2429ff;
+      }
+    </style>
+  </defs>
+  <title>arrow-next</title>
+  <path class="a" d="M2.46,40.91A2.44,2.44,0,0,0,4,40.36l22.09-18a2.45,2.45,0,0,0,0-3.81L4,.55A2.45,2.45,0,1,0,.9,4.36l19.75,16.1L.9,36.55a2.45,2.45,0,0,0,1.55,4.36Z" transform="translate(0 0)"/>
+</svg>
