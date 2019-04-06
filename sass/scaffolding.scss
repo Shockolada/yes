@@ -31,42 +31,14 @@ body {
   letter-spacing: 0.05em;
 
   overflow-x: hidden;
-
-  // temporally
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-    width: 320px;
-    min-height: 9500px;
-    background-image: url("../Layout/Yes_mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    opacity: 0.5;
-  }
-  //
 }
+
 
 @media (min-width: $tablet-width) {
 
   body {
     font-size: 16px;
     line-height: 24px;
-
-    // temporally
-    &::before {
-      top: 0;
-      width: 750px;
-      min-height: 8500px;
-      background-image: url("../Layout/Yes_tablet.jpg");
-    }
-    //
   }
 }
 
@@ -75,14 +47,6 @@ body {
   body {
     font-size: 18px;
     line-height: 28px;
-
-    // temporally
-    &::before {
-      width: 1170px;
-      min-height: 8000px;
-      background-image: url("../Layout/Yes_desktop.jpg");
-    }
-    //
   }
 }
 
