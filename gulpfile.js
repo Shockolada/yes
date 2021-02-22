@@ -30,21 +30,21 @@ gulp.task("styles", done => {
 
 gulp.task("server", function () {
   server.init({
-    server: "./",
+    server: "build",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("./sass/**/*.{scss,sass}", gulp.series('styles')).on("change", server.reload);
-  gulp.watch("./*.html").on("change", server.reload);
-  gulp.watch("./js/**/*.js").on("change", server.reload);
+  gulp.watch("src/sass/**/*.{scss,sass}", gulp.series('styles')).on("change", server.reload);
+  gulp.watch("src/*.html").on("change", server.reload);
+  gulp.watch("src/js/**/*.js").on("change", server.reload);
 });
 
 
 gulp.task("style", done => {
-  gulp.src("sass/style.scss")
+  gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -70,13 +70,13 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("./sass/**/*.{scss,sass}", gulp.series('styles')).on("change", server.reload);
-  gulp.watch("./*.html").on("change", server.reload);
-  gulp.watch("./js/**/*.js").on("change", server.reload);
+  gulp.watch("src/sass/**/*.{scss,sass}", gulp.series('styles')).on("change", server.reload);
+  gulp.watch("src/*.html").on("change", server.reload);
+  gulp.watch("src/js/**/*.js").on("change", server.reload);
 });
 
 gulp.task("images", function () {
-  return gulp.src("img/**/*.{png,jpg,svg}")
+  return gulp.src("src/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
@@ -95,14 +95,14 @@ gulp.task("images", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-      "*.html",
-      "fonts/**/*.{woff,woff2}",
-      "img/**",
-      "js/**",
-      "css/**",
-      "*.ico"
+      "src/*.html",
+      "src/fonts/**/*.{woff,woff2}",
+      "src/img/**",
+      "src/js/**",
+      "src/css/**",
+      "src/*.ico"
     ], {
-      base: "."
+      base: "src"
     })
     .pipe(gulp.dest("build"));
 });
